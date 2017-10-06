@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/responsive-grid.css">
         <link rel="stylesheet" type="text/css" href="css/slimmenu.min.css">
+        <link rel="stylesheet" type="text/css" href="css/flexslider.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://use.fontawesome.com/bd439b53d9.js"></script>
         
@@ -80,7 +81,16 @@
         
         <div class="section group">
             <div class="col span_12_of_12">
-                <img src="images/shoes.jpg"/>
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/shoes.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/sunglasses.jpg"/>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         
@@ -164,7 +174,13 @@
             </div>
         </footer>
         
-        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+          $(window).load(function() {
+            $('.flexslider').flexslider();
+          });
+        </script>
         <!-- Slimmenu -->
         <script src="js/jquery.slimmenu.min.js"></script>
         <!-- Script for the slimmenu -->
