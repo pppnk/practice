@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Designer Clothing.com</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive-grid.css">
+        <link rel="stylesheet" type="text/css" href="css/slimmenu.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://use.fontawesome.com/bd439b53d9.js"></script>
+        
+    </head>
+    <body>
+        
+        <header>
+            <div class="section group">
+                <div class="col span_6_of_12">
+                    <p id="logo">DESIGNER CLOTHING<br/>CLOTHING<span class="highlighted">.COM</span></p>
+                </div>
+                <div class="col span_6_of_12">
+                    <ul>
+                        <li><a href="#">MY ACCOUNT<i class="fa fa-home"></i></a></li>
+                        <li><a href="#">MY BASKET<i class="fa fa-tag"></i></a></li>
+                        <li><a href="#">CHECKOUT<i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section group">
+                <div class="col span_6_of_12"></div>
+                <div class="col span_6_of_12">
+                    <form>
+                        <input type="search" type="search" placeholder="Search...">
+                        <input id="click-btn" type="button" value="GO">
+                    </form>
+                </div>
+            </div>
+        </header>
+        
+        <div class="section group">
+            <div class="col span_12_of_12">
+                <nav>
+                    <ul id="navigation" class="slimmenu">
+                        <li>
+                            <a href="#">FOR HIM<i class="fa fa-mars"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="#">CLOTHING</a></li>
+                                <li><a href="#">SHOES</a></li>
+                                <li><a href="#">ACCESSORIES</a></li>
+                                <li><a href="#"><span class="sale-text">SALE</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">FOR HER<i class="fa fa-venus"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="#">CLOTHING</a></li>
+                                <li><a href="#">SHOES</a></li>
+                                <li><a href="#">ACCESSORIES</a></li>
+                                <li><a href="#"><span class="sale-text">SALE</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">NEW COLLECTIONS</a></li>
+                        <li><a href="#"><span class="sale-text">SALE</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="section group sub-nav">
+            <div class="col span_4_of_12">
+                <p>GET 5% OFF YOUR FIRST ORDER</p>
+            </div>
+            <div class="col span_4_of_12">
+                <p>FREE SHIPPING ON EVERYTHING</p>
+            </div>
+            <div class="col span_4_of_12">
+                <p>PRICE MATCH GUARANTEE</p>
+            </div>
+        </div>
+        
+        <div class="section group">
+            <div class="col span_12_of_12">
+                <img src="images/shoes.jpg"/>
+            </div>
+        </div>
+        
+        <div class="section group gallery">
+            <div class="col span_4_of_12">
+                <div class="feature">
+                    <a href="#">
+                        <img src="images/accessories.jpg"/>
+                        <p>ACCESSORIES</p>
+                    </a>
+                </div>
+                <div class="feature">
+                    <a href="#">
+                        <img src="images/model.jpg"/>
+                        <p>LATEST FASHION</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col span_4_of_12">
+                <div class="feature">
+                    <a href="#">
+                        <img src="images/girl.jpg"/>
+                        <p>GET DRESSED UP</p>
+                    </a>
+                </div>            
+            </div>
+            <div class="col span_4_of_12">
+                <div class="feature">
+                    <a href="#">
+                        <img src="images/feet.jpg"/>
+                        <p>FOOT WEAR</p>
+                    </a>
+                </div>
+                <div class="feature">
+                    <a href="#">
+                        <img src="images/flower.jpg"/>
+                        <p>SET FOR SUMMER</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- Slimmenu -->
+        <script src="js/jquery.slimmenu.min.js"></script>
+        <!-- Script for the slimmenu -->
+        <script>
+            $('#navigation').slimmenu(
+            {
+                resizeWidth: '800',
+                collapserTitle: 'Main Menu',
+                animSpeed: 'medium',
+                easingEffect: null,
+                indentChildren: false,
+                childrenIndenter: '&nbsp;'
+            });
+        </script>
+    </body>
+</html>
