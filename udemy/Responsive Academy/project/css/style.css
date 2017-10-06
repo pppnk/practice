@@ -47,7 +47,7 @@ header li {
 }
 
 .fa {
-    margin: 5px;
+    margin-left: 5px;
 }
 
 /****************************
@@ -123,6 +123,10 @@ input[type=email] {
 .about-us {
     text-align: center;
     line-height: 1.5em;
+}
+
+.social-media {
+    height: fit-content;
 }
 
 footer ul {
