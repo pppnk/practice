@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Picture Element</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/picturefill.js" async></script>
+        <style>
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+       <picture>
+        <!-- For retina or larger displays
+            <source media="(min-width: 1280px)"
+                srcset="images/dog1280.jpg,
+                        images/1.5xdog1280.jpg 1.5x,
+                        images/2xdog1280.jpg 2x">
+        -->
+        <!-- Example for choosing a different format
+        <source type="image/webp" srcset="images/dog.webp">
+        <img src="images/dog.jpg" alt="Cute dog">   
+        -->   
+        <source media="(min-width: 1280px)"
+                srcset="images/dog1280.jpg">
+        <source media="(min-width: 640px)"
+                srcset="images/dog640.jpg">
+        <img src="images/dog.jpg" alt="Cute dog">
+       </picture> 
+    </body>
+</html>
