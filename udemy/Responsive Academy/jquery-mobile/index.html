@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>jQuery Mobile page</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/themes/designer-clothing-mobile.css" />
+      <link rel="stylesheet" href="css/themes/custom.css" />
+      <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+    </head>
+    <body>
+        <div data-role="page" data-theme="a" style="max-height: 100vh;">
+            <div data-role="header" data-position="fixed">
+                <h1>Designer Clothing<br/><span class="highlighted">.com</span></h1>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li><a href="#" data-icon="home">Home</a></li>
+                        <li><a href="#" data-icon="shop" class="ui-btn-active">My Basket</a></li>
+                        <li><a href="#" data-icon="check">Checkout</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div>
+            
+            <div role="main" class="ui-content">
+                <div data-role="collapsible" data-collapsed="true">
+                    <h3>Main Menu</h3>
+                    <ul data-role="listview">
+                        <li data-role="list-divider">FOR HIM</li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">ACCESORIES</a></li>
+                        <li data-role="list-divider">FOR HER</li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">ACCESORIES</a></li>
+                        <li data-role="list-divider">NEW COLLECTIONS</li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">ACCESORIES</a></li>
+                        <li data-role="list-divider">SALE</li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">ACCESORIES</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <img src="images/shoes.jpg">
+                    <a href="#" class="ui-btn">GET 5% OFF YOUR FIRST ORDER</a>
+                    <a href="#" class="ui-btn">FREE SHIPPING ON EVERYTHING</a>
+                    <a href="#" class="ui-btn">PRICE MATCH GUARANTEE</a>
+                </div>
+
+                <div style="text-align: center">
+                    <div class="feature">
+                        <a href="#">
+                            <img src="images/accessories.jpg"/>
+                            <p>ACCESSORIES</p>
+                        </a>
+                    </div>
+                    <div class="feature">
+                        <a href="#">
+                            <img src="images/model.jpg"/>
+                            <p>LATEST FASHION</p>
+                        </a>
+                    </div>
+
+
+                    <div class="feature">
+                        <a href="#">
+                            <img src="images/girl.jpg"/>
+                            <p>GET DRESSED UP</p>
+                        </a>
+                    </div>            
+
+
+                    <div class="feature">
+                        <a href="#">
+                            <img src="images/feet.jpg"/>
+                            <p>FOOT WEAR</p>
+                        </a>
+                    </div>
+                    <div class="feature">
+                        <a href="#">
+                            <img src="images/flower.jpg"/>
+                            <p>SET FOR SUMMER</p>
+                        </a>
+                    </div>
+                </div>
+            
+                <div>
+                    <form>
+                        <input type="email" name="email" id="email" placeholder="Join our email club....">
+                        <button type="submit" class="ui-btn ui-mini">Submit Email</button>
+                    </form>
+                    <p>Welcome to <strong>DesignerClothing.com. </strong>We are a global fashion leader offering all of the latest styles to cater for all tastes and budgets with hundreds of items added every week.</p>
+                </div>
+            </div>
+            
+            <div data-role="footer">
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li><a href="#" data-icon="info">About</a></li>
+                        <li><a href="#" data-icon="phone">Contact</a></li>
+                        <li><a href="#myPanel" data-icon="plus">More</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div>
+            
+            <div data-role="panel" id="myPanel">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Returns Info</a></li>
+                    <li><a href="#">Delivery Info</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
