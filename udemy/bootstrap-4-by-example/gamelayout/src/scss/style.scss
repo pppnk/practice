@@ -1,16 +1,26 @@
-$bg-color: gray;
+$green: #00FFC4;
+$brand-primary: $green;
 
+$link-color: $green;
+$body-bg: #1A1B1D;
+
+$font-family-sans-serif: "Raleway", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$bg-color: gray;
 body {
   background: $bg-color;
+  color: white;
+}
+
+#hero {
+  background: url('/assets/bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: 0 60%;
 }
 
 .navbar {
   width: 100%;
   background: none !important;
-
-  @media(max-width: 34em){
-    background: black !important;
-  }
 
   .navbar-toggler {
     cursor: pointer;
@@ -34,5 +44,44 @@ body {
         color: white !important;
       }
     }
+  }
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+.hero-img {
+  width: 80%;
+}
+
+.feature-wrapper {
+  color: #000;
+}
+
+#join-container {
+  background: url('/assets/screen1.jpg') no-repeat;
+  background-size: cover;
+
+  h2 {
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+
+  h4 {
+    color: gray;
+  }
+
+  .form-control {
+    background-color: black;
+    border: 3px solid #2F2F2F;
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 12px;
+    border: none;
+    color: #000;
   }
 }
