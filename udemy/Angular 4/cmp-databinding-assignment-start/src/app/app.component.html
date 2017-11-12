@@ -12,6 +12,27 @@
         <li>Simply output Odd - NUMBER or Even - NUMBER in the two components</li>
         <li>Style the element (e.g. paragraph) holding your output text differently in both components</li>
       </ol>
+      <app-game-control
+      (oddIncrement)="onAddOdd($event)"
+      (evenIncrement)="onAddEven($event)">
+      </app-game-control>
+      <div class="content">
+        <div class="row">
+          <div class="col-sm-6">
+            <app-odd
+              *ngFor = "let oddValue of oddValues"
+              [oddValue]="oddValue">
+            </app-odd>
+          </div>
+          <div class="col-sm-6">
+            <app-even
+              *ngFor = "let evenValue of evenValues"
+              [evenValue]="evenValue">
+            </app-even>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
