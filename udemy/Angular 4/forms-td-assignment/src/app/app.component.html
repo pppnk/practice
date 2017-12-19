@@ -30,9 +30,10 @@
             <label>Subscription Type: </label>
             <select name="subscription"
                     class="form-control"
-                    [(ngModel)]="selectedSubscription" required>
+                    [ngModel]="selectedSubscription"
+                    required>
               <option *ngFor="let subscriptionType of subscriptions"
-                      value="subscriptionType">
+                      [value]="subscriptionType">
                 {{ subscriptionType }}
               </option>
             </select>
